@@ -1063,6 +1063,11 @@
                     </div>
 
                     <div class="form-group">
+                        <label class="form-label">CPF</label>
+                        <input type="text" id="cpf" class="form-input" required placeholder="000.000.000-00" maxlength="14" oninput="formatCPF(this)">
+                    </div>
+                    
+                    <div class="form-group">
                         <label class="form-label">Plano</label>
                         <select id="plan" class="form-select" onchange="updatePlanLimits()" required>
                             <option value="free">Free - R$ 0/mês</option>
